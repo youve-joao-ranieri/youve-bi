@@ -1,6 +1,6 @@
 # Youve Pro BI Platform
 
-Youve BI is an open-source platform inspired on [Poli BI](https://github.com/shzlw/poli)
+Youve BI is an open-source platform inspired on [Poli Framework](https://github.com/shzlw/poli)
 
 ## Tech
 ### Main tech stack
