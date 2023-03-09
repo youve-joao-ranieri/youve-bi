@@ -3,7 +3,6 @@
   - [Installation](installation.md)
   - [Quick Start](quick-start.md)
   - [Configuration](configuration.md)
-  - [Upgrade](upgrade.md)
 
 - Basic Concepts
 
