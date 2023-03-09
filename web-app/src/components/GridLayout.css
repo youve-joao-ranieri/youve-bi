@@ -1,0 +1,75 @@
+
+.grid-layout {
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.grid-box {
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.grid-box-title {
+  padding: 3px 6px;
+  flex: 0 1 auto;
+}
+
+.grid-box-title-value {
+  font-size: 18px;
+}
+
+.grid-box-content {
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+
+.grid-box-content-panel {
+  padding: 0px 5px;
+  z-index: 1;
+}
+
+.grid-title-button-panel {
+  position: absolute; 
+  right: 0; 
+  top: 0; 
+  background-color: transparent;
+  padding: 4px;
+  z-index: 2;
+  min-width: 20px;
+  height: 20px;
+}
+
+.grid-draggable {
+  cursor: move;
+  height: 25px;
+  position: absolute; 
+  left: 0px; 
+  top: 0px; 
+  right: 0px;
+  background-color: transparent;
+  z-index: 10;
+}
+
+.grid-resizable {
+  width: 12px;
+  height: 12px;
+  position: absolute; 
+  right: 0; 
+  bottom: 0; 
+  cursor: se-resize; 
+  z-index: 10;
+}
+
+.download-csv-button {
+  display: none;
+  z-index: 10;
+}
+
+.grid-title-button-panel:hover .download-csv-button {
+  display: inline-block;
+  transition: 0.3s;
+}

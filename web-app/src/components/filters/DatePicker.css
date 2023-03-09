@@ -1,0 +1,93 @@
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.calendar-container {
+  padding-top: 5px;
+}
+
+.calendar-dialog {
+  width: 189px;
+  border: 1px solid #dfe1e6;
+  position: fixed;
+  background-color: #FFFFFF;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.calendar-cell {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  float: left;
+  text-align: center;
+}
+
+.calendar-container .select-date {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;    
+  box-sizing: border-box;
+  box-shadow: none !important;
+  border: 2px solid #dfe1e6 !important;
+  padding: 5px 8px;
+  cursor: pointer;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.calendar-container .header-cell {
+  border: 1px solid #dfe1e6;
+  background-color: #dfe1e6;
+  color: #000000;
+  font-weight: bold;
+}
+
+.calendar-container .body-cell {
+  border: 1px solid #dfe1e6;
+}
+
+.calendar-container .clickable {
+  cursor: pointer;
+}
+
+.calendar-container .clickable:hover {
+  background-color: #0065FF;
+  color: #FFFFFF;
+}
+
+.calendar-container .non-clickable {
+  background-color: #dfe1e6;
+}
+
+.calendar-container .cell-active {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.calendar-container .display-date {
+  float: left;
+  width: 109px;
+  height: 25px;
+  text-align: center;
+}
+
+.calendar-container .calendar-button {
+  color: #0065FF;
+  width: 40px;
+  cursor: pointer;
+}
+
+.calendar-container .select-year {
+  height: 20px;
+  margin-top: 3px;
+  border: 1px solid #dfe1e6 !important;
+}
+
+.calendar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

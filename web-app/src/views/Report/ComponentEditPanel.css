@@ -1,0 +1,38 @@
+
+.schema-table-title {
+  padding: 4px 8px;
+  cursor: pointer;
+  margin-bottom: 3px;
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  box-shadow: rgba(50, 50, 93, 0.149) 0px 1px 3px, rgba(0, 0, 0, 0.0196) 0px 1px 0px;
+  font-weight: 700;
+}
+
+.schema-column-row {
+  padding: 4px 8px 4px 20px;
+}
+
+.schema-column-type {
+  color: #8993A4;
+}
+
+.tag-label {
+  padding: 2px 12px;
+  background-color: #8993A4;
+  color: #FFFFFF;
+  display: inline-block;
+}
+
+.grid-label {
+  line-height: 32px;
+  margin-right: 5px;
+}
+
+.grid-input {
+  width: 50px;
+  margin-right: 8px;
+  text-align: right;
+}
