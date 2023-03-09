@@ -40,10 +40,22 @@ Youve BI is an open-source platform inspired on [Poli BI](https://github.com/shz
 
 ##### Using Docker (preferred):
 
+1. Create a docker image from the root of the repository:
 ````
 docker build -t poli-youve .
+````
+
+2. Create and run the container built on the previous step:
+````
 docker run -d -p 6688:6688 poli-youve
 ````
+
+3. Go to:
+```sh
+127.0.0.1:6688
+```
+
+4. Enjoy!
 
 ##### Using Java:
 1. Run the build script.
@@ -61,10 +73,13 @@ build.bat
 ```
 java -jar target\poli-x.y.z.jar
 ```
+
+3. Go to:
 ```sh
 127.0.0.1:6688
 ```
 
+4. Enjoy!
 
 ## Usage
   
