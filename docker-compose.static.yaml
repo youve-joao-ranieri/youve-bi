@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  db_postgres:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: 'admin'
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./pgsql:/var/lib/postgresql/data
+
+  pg_admin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: 'admin@youve.com.br'
+      PGADMIN_DEFAULT_PASSWORD: 'admin'
+    ports:
+      - '16543:80'
+    depends_on:
+      - db_postgres
