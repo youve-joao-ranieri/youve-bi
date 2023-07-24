@@ -17,7 +17,9 @@ RUN wget http://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/ap
   rm apache-maven-$MAVEN_VERSION-bin.tar.gz && \
   mv apache-maven-$MAVEN_VERSION /usr/lib/mvn
 
-# Build the jar
+# Copy build script to the container and run it
+COPY build.sh /app/build.sh
+RUN chmod +x /app/build.sh
 RUN ./build.sh
 
 # Deploy
